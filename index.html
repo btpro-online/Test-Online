@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOÁN 185 NGUYỄN LỘ TRẠCH</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 40px 20px;
+            gap: 25px;
+        }
+
+        /* Thẻ liên kết bọc ngoài */
+        .card-link {
+            text-decoration: none; /* Bỏ gạch chân mặc định của thẻ liên kết */
+            display: block; /* Biến thẻ a thành khối để ôm trọn vẹn hộp bên trong */
+        }
+
+        /* Định dạng chung cho các khối */
+        .card {
+            width: 400px;
+            padding: 25px 20px;
+            color: #ffffff;
+            text-align: center;
+            border: 1px solid #000000;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        /* Mã màu sắc cho từng khối */
+        .card-blue { background-color: #4472c4; }
+        .card-orange { background-color: #ed7d31; }
+        .card-green { background-color: #70ad47; }
+        
+        /* Hiệu ứng khi di chuột qua */
+        .card:hover {
+            transform: translateY(-3px); 
+        }
+
+        .card-blue:hover { box-shadow: 0 0 20px rgba(68, 114, 196, 0.7); }
+        .card-orange:hover { box-shadow: 0 0 20px rgba(237, 125, 49, 0.7); }
+        .card-green:hover { box-shadow: 0 0 20px rgba(112, 173, 71, 0.7); }
+
+        .card:active {
+            transform: translateY(1px);
+        }
+
+        /* Nội dung chữ bên trong */
+        .card h2 {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        /* Định dạng danh sách câu hỏi gạch đầu dòng */
+        .card ul {
+            list-style-type: none;
+            text-align: left;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .card ul li {
+            font-size: 16px;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card ul li::before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://google.com" target="_blank" class="card-link">
+        <div class="card card-blue">
+            <h2>Đề kiểm tra số 1</h2>
+            <h3>Chủ đề: Hàm số</h3>
+            <p>Thời gian: 90 phút</p>
+            <p>Cấu trúc: 12-4-6</p>
+        </div>
+    </a>
+
+    <a href="https://wikipedia.org" class="card-link">
+        <div class="card card-orange">
+            <h2>Đề kiểm tra số 2</h2>
+            <h3>Chủ đề: Tích phân</h3>
+            <p>Thời gian: 90 phút</p>
+            <p>Cấu trúc: 12-4-6</p>  
+        </div>
+    </a>
+
+    <a href="https://github.com" class="card-link">
+        <div class="card card-green">
+            <h2>Đề kiểm tra số 3</h2>
+            <h3>Chủ đề: Hình học Oxyz</h3>
+            <p>Thời gian: 90 phút</p>
+            <p>Cấu trúc: 12-4-6</p>
+        </div>
+    </a>
+
+</body>
+</html>
