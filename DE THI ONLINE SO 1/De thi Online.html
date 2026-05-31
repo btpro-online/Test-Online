@@ -58,8 +58,8 @@
             max-width: 900px;
             margin: 0 auto;
             background: white;
-            padding: 30px;
-            border-radius: 12px;
+            padding: 5px;
+            border-radius: 2px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -133,8 +133,8 @@
         .question-box {
             background: #fff;
             border: 1px solid #e2e8f0;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 5px;
+            border-radius: 2px;
             margin-bottom: 20px;
             transition: all 0.3s ease;
         }
@@ -863,7 +863,7 @@ totalSeconds--;
 const minutes = Math.floor(totalSeconds/60);
 const seconds = totalSeconds % 60;
 document.getElementById('timer').innerText=
-`Thời gian: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+` ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }, 1000);
 }
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw0jTxm2nXcVUoMNz_zu8bcf9KofcbfHJq-6KmnCl0KA6bvaw3ea1tFfwFSD5rVSH2p/exec";
